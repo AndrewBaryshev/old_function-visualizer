@@ -1,11 +1,11 @@
-import { SliderComponent } from "./ui-components";
+import { SliderComponent } from './ui-components'
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <SliderComponent></SliderComponent>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

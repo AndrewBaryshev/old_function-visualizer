@@ -14,7 +14,8 @@ export function evaluateFormula(formula: string, x: number): number {
       x: x,
     }
 
-    return evaluate(processedFormula, scope)
+    const result = evaluate(processedFormula, scope)
+    return Number(result)
   } catch (error) {
     console.error('Ошибка при вычислении формулы:', error)
     console.error('Формула:', formula)

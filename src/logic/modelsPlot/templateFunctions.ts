@@ -166,7 +166,7 @@ export function templateRange(
   if (logarithm) {
     for (let i = 0; i < 100; i++) {
       let logStep = (logMaxX - logMinX) / 100
-      let x = 10 ** (logMinX + (i * logStep) / scaleX)
+      let x = Math.pow(10, logMinX + (i * logStep) / scaleX)
 
       if (this && this?.formula) {
         const y = evaluateFormula(this.formula, x)

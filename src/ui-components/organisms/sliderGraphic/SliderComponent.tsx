@@ -1,9 +1,4 @@
 import { FC } from 'react'
-import {
-  testFunctions,
-  selfSimilarDensityProfileApprox,
-  templateFunctions,
-} from '../../../logic'
 import { GraphicComponent } from '../graphicBase/GraphicComponent'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
@@ -16,33 +11,6 @@ export const SliderComponent: FC<any> = () => {
     (state: RootState) => state.myReducerSlider.position
   )
   const dispatch = useDispatch()
-
-  let objForBind: any = {
-    legendStyle: {
-      color: '#E0D1A8',
-      width: 2,
-      formula: 'p(r) = 6 * r',
-    },
-    formula: '6 * r',
-  }
-  let objForBind2: any = {
-    legendStyle: {
-      color: '#76BD3E',
-      width: 2,
-      formula: 'p(r) = r + 9 + r ** 2',
-    },
-    formula: 'r + 9 + r ** 2',
-  }
-
-  let myFunc = templateFunctions.bind(objForBind)
-  let myFunc2 = templateFunctions.bind(objForBind2)
-
-  let arrMethods: any = [[myFunc, myFunc2]]
-
-  let objectMethods = {
-    testFunctions,
-    selfSimilarDensityProfileApprox,
-  }
 
   let arrGraphicComponents: any = [
     {
