@@ -1,32 +1,32 @@
-import { FC, useState } from "react";
-import { AddFunctionButton } from "../atoms/AddFunctionButton";
-import { EditFunction } from "../atoms/EditFunction";
+import { FC, useState } from 'react'
+import { AddFunctionButton } from '../atoms/AddFunctionButton'
+import { EditFunction } from '../atoms/EditFunction'
 
 export const AddMethod: FC<any> = ({ method, setMethod }) => {
-  const [arrFunctions, setArrFunctions] = useState<any>([]);
+  const [arrFunctions, setArrFunctions] = useState<any>([])
 
   return (
-    <div className="add-method-container">
-      {method.map((elem: any) => {
-        let indexBuf = method.indexOf(elem);
+    <div className='add-method-container'>
+      {method.map((_: any, index: number) => {
         return (
           <EditFunction
-            index={indexBuf}
+            key={index}
+            index={index}
             method={method}
             setMethod={setMethod}
-            containText={arrFunctions[indexBuf].name}
+            containText={arrFunctions[index].name}
             arrFunctions={arrFunctions}
             setArrFunctions={setArrFunctions}
           ></EditFunction>
-        );
+        )
       })}
       <AddFunctionButton
         method={method}
         setMethod={setMethod}
-        containText={"Add function"}
+        containText={'Add function'}
         arrFunctions={arrFunctions}
         setArrFunctions={setArrFunctions}
       ></AddFunctionButton>
     </div>
-  );
-};
+  )
+}

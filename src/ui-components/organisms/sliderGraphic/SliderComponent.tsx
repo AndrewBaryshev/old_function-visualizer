@@ -93,8 +93,8 @@ export const SliderComponent: FC<any> = () => {
           style={{ left: offset + 'px' }}
           className='slider-component-container transition'
         >
-          {arrGraphicComponents.map((elem: any) => (
-            <GraphicComponent title={elem.name} />
+          {arrGraphicComponents.map((elem: any, index: number) => (
+            <GraphicComponent key={index} title={elem.name} />
           ))}
         </div>
       </div>
@@ -122,17 +122,13 @@ export const SliderComponent: FC<any> = () => {
               gradientUnits='userSpaceOnUse'
               gradientTransform='translate(30.3519 27) rotate(-175.099) scale(87.7848 35.4452)'
             >
-              <stop offset='0.145416' stop-color='#BDE3FF' />
+              <stop offset='0.145416' stopColor='#BDE3FF' />
               <stop
                 offset='0.376996'
-                stop-color='#FF0707'
-                stop-opacity='0.742344'
+                stopColor='#FF0707'
+                stopOpacity='0.742344'
               />
-              <stop
-                offset='0.502897'
-                stop-color='#0093FF'
-                stop-opacity='0.49'
-              />
+              <stop offset='0.502897' stopColor='#0093FF' stopOpacity='0.49' />
             </radialGradient>
           </defs>
         </svg>
@@ -162,17 +158,13 @@ export const SliderComponent: FC<any> = () => {
               gradientUnits='userSpaceOnUse'
               gradientTransform='translate(27.3829 27) rotate(-4.9011) scale(87.7848 35.4452)'
             >
-              <stop offset='0.145416' stop-color='#BDE3FF' />
+              <stop offset='0.145416' stopColor='#BDE3FF' />
               <stop
                 offset='0.376996'
-                stop-color='#FF0707'
-                stop-opacity='0.742344'
+                stopColor='#FF0707'
+                stopOpacity='0.742344'
               />
-              <stop
-                offset='0.502897'
-                stop-color='#0093FF'
-                stop-opacity='0.49'
-              />
+              <stop offset='0.502897' stopColor='#0093FF' stopOpacity='0.49' />
             </radialGradient>
           </defs>
         </svg>

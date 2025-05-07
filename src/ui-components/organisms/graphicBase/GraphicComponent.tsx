@@ -425,9 +425,10 @@ export const GraphicComponent: FC<GraphicComponentType> = ({ title }) => {
         {actualPage === 0 && (
           <div className='buttonContainer'>
             <div className='buttonContainer__inner'>
-              {arrayPagesUI[actualPage].map((elem: any) => {
+              {arrayPagesUI[actualPage].map((elem: any, index: number) => {
                 return (
                   <SimpleButton
+                    key={index}
                     containText={elem}
                     onHandleClick={(elem: any) => !elem}
                     setTurnOffUpperX={setTurnOffUpperX}
@@ -529,9 +530,10 @@ export const GraphicComponent: FC<GraphicComponentType> = ({ title }) => {
         {actualPage === 1 && (
           <div className='buttonContainer'>
             <div className='buttonContainer__other'>
-              {arrayPagesUI[actualPage].map((elem: any) => {
+              {arrayPagesUI[actualPage].map((elem: any, index: number) => {
                 return (
                   <SetInterfaceButton
+                    key={index}
                     value={elem.value}
                     setNewValue={elem.setNewValue}
                     containText={elem.containText}
@@ -574,9 +576,10 @@ export const GraphicComponent: FC<GraphicComponentType> = ({ title }) => {
         {actualPage === 2 && (
           <div className='buttonContainer'>
             <div className='buttonContainer__other'>
-              {arrayPagesUI[actualPage].map((elem: any) => {
+              {arrayPagesUI[actualPage].map((elem: any, index: number) => {
                 return (
                   <SetInterfaceButton
+                    key={index}
                     value={elem.value}
                     setNewValue={elem.setNewValue}
                     containText={elem.containText}
@@ -619,9 +622,10 @@ export const GraphicComponent: FC<GraphicComponentType> = ({ title }) => {
         {actualPage === 3 && (
           <div className='buttonContainer'>
             <div className='buttonContainer__other'>
-              {arrayPagesUI[actualPage].map((elem: any) => {
+              {arrayPagesUI[actualPage].map((elem: any, index: number) => {
                 return (
                   <SetInterfaceButton
+                    key={index}
                     value={elem.value}
                     setNewValue={elem.setNewValue}
                     containText={elem.containText}

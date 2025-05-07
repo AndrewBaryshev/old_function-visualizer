@@ -2,6 +2,7 @@ import {
   createGraphicAction,
   createRangeAction,
 } from '../logicFrames/createAction'
+import { evaluateFormula } from './formulaEvaluator'
 
 interface MyInterface {
   formula?: string
@@ -46,8 +47,8 @@ export function templateFunctions(
     let x = (i * stepX) / scaleX + rangeOffsetX
 
     if (this && this?.formula) {
-      let r = x
-      dataY.push(eval(this?.formula) * (offsetTics + 1) * scaleY)
+      const y = evaluateFormula(this.formula, x)
+      dataY.push(y * (offsetTics + 1) * scaleY)
     } else {
       dataY.push(1 * (offsetTics + 1) * scaleY)
     }
@@ -168,11 +169,10 @@ export function templateRange(
       let x = 10 ** (logMinX + (i * logStep) / scaleX)
 
       if (this && this?.formula) {
-        let r = x
-        dataY.push(
-          ((Math.log10(eval(this?.formula)) - logMinY) / logLPY) * scaleY
-        )
-        realDataY.push(Math.log10(eval(this?.formula)))
+        const y = evaluateFormula(this.formula, x)
+        console.log(y)
+        dataY.push(((Math.log10(y) - logMinY) / logLPY) * scaleY)
+        realDataY.push(Math.log10(y))
       }
       dataX.push((Math.log10(x) - logMinX) / logLPX)
       realDataX.push(Math.log10(x))
@@ -183,9 +183,10 @@ export function templateRange(
       let x = minX + (i * linearStep) / scaleX
 
       if (this && this?.formula) {
-        let r = x
-        dataY.push(((eval(this?.formula) - minY) / lPY) * scaleY)
-        realDataY.push(eval(this?.formula))
+        const y = evaluateFormula(this.formula, x)
+        console.log(y)
+        dataY.push(((y - minY) / lPY) * scaleY)
+        realDataY.push(y)
       }
       dataX.push((x - minX) / lPX)
       realDataX.push(x)
