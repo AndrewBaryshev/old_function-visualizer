@@ -1,0 +1,75 @@
+.switchValueButton{
+  width: 150px;
+  height: 40px;
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  border-radius: 15px;
+}
+
+.scaleButton{
+  width: 150px;
+  height: 40px;
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  border-radius: 15px;
+}
+
+.value-switch-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-switch-container-interface{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-switch-container-interface:hover{
+  cursor: pointer;
+  background-color: #E0D1A8;
+}
+
+.value-switch-container-some{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-switch-container-some:hover{
+  cursor: pointer;
+  background-color: #E0D1A8;
+}
+
+.switch-button-small-minus{
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #C8A7A7;
+}
+
+.switch-button-small-plus{
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D5F0B0;
+}
+
+.switch-button-small-minus:hover{
+  background: #FF0000;
+  cursor: pointer;
+}
+
+.switch-button-small-plus:hover{
+  background: #05FF00;
+  cursor: pointer;
+}
+
+p{
+  margin: 0;
+}

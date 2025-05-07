@@ -1,0 +1,43 @@
+.slider-component{
+  position: relative;
+  width: 1300px;
+  height: 800px;
+  overflow: hidden;
+}
+
+.slider-component-container {
+  position: absolute;
+  width: 16900px;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  left: 0px;
+}
+
+.left-arrow>*>path:hover{
+  fill: red;
+  cursor: pointer;
+}
+
+.right-arrow>*>path:hover{
+  fill: red;
+  cursor: pointer;
+}
+
+.left-arrow{
+  position: absolute;
+  left: -10px;
+  top: 603px;
+}
+
+.right-arrow{
+  position: absolute;
+  left: 140px;
+  top: 603px;
+}
+
+.title{
+  position: absolute;
+  left: 29px;
+  top: 659px;
+}

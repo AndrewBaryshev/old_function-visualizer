@@ -1,0 +1,43 @@
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__other{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.container-footer{
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-container{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexibility{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexibility-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}

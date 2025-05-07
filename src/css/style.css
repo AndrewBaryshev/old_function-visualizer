@@ -1,0 +1,351 @@
+@charset "UTF-8";
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  background: #BDE3FF;
+}
+
+*, * {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 100px;
+}
+
+.smallButton {
+  width: 130px;
+  height: 40px;
+  background: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.smallButton:hover {
+  cursor: pointer;
+  background: #DFF2C6;
+}
+
+.transition {
+  transition: 0.3s;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+.buttonContainer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.buttonContainer__other {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container-footer {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexibility {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexibility-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.switchValueButton {
+  width: 150px;
+  height: 40px;
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  border-radius: 15px;
+}
+
+.scaleButton {
+  width: 150px;
+  height: 40px;
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  border-radius: 15px;
+}
+
+.value-switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-switch-container-interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-switch-container-interface:hover {
+  cursor: pointer;
+  background-color: #E0D1A8;
+}
+
+.value-switch-container-some {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-switch-container-some:hover {
+  cursor: pointer;
+  background-color: #E0D1A8;
+}
+
+.switch-button-small-minus {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #C8A7A7;
+}
+
+.switch-button-small-plus {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #D5F0B0;
+}
+
+.switch-button-small-minus:hover {
+  background: #FF0000;
+  cursor: pointer;
+}
+
+.switch-button-small-plus:hover {
+  background: #05FF00;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+.add-method-container {
+  width: 200px;
+  height: 600px;
+  border: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-component {
+  position: relative;
+  width: 1300px;
+  height: 800px;
+  overflow: hidden;
+}
+
+.slider-component-container {
+  position: absolute;
+  width: 16900px;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  left: 0px;
+}
+
+.left-arrow > * > path:hover {
+  fill: red;
+  cursor: pointer;
+}
+
+.right-arrow > * > path:hover {
+  fill: red;
+  cursor: pointer;
+}
+
+.left-arrow {
+  position: absolute;
+  left: -10px;
+  top: 603px;
+}
+
+.right-arrow {
+  position: absolute;
+  left: 140px;
+  top: 603px;
+}
+
+.title {
+  position: absolute;
+  left: 29px;
+  top: 659px;
+}
+
+.button-add-function {
+  width: 150px;
+  height: 40px;
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  border-radius: 15px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.choose-params {
+  width: 400px;
+  background-color: #ECEEEB;
+  position: absolute;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formula-input {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-form-submit {
+  margin-top: 10px;
+}
+
+.input-formula {
+  width: 300px;
+}
+
+.set-range {
+  width: 280px;
+  margin-top: 10px;
+  background-color: #D9D9D9;
+}
+.set-range__iner {
+  height: 50px;
+  width: 280px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
+}
+
+.flex-set-range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+.button-approve {
+  display: flex;
+  width: 23px;
+  height: 23px;
+  align-items: center;
+  justify-content: center;
+  background-color: #D5F0B0;
+  border-radius: 25px;
+}
+
+.button-approve:hover {
+  background-color: #05FF00;
+  cursor: pointer;
+}
+
+.show-y0-y100 {
+  width: 196px;
+  height: 60px;
+  position: absolute;
+  top: 541px;
+  left: 1px;
+  background-color: #D9D9D9;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.flex-point {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.container-main-graphic {
+  position: relative;
+}
+
+body {
+  -webkit-user-select: none; /* запрет выделения для WebKit */
+  -moz-user-select: none; /* запрет выделения для Gecko */ /* запрет выделения для Edge и IE */
+  user-select: none; /* общая команда */
+}
+
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.myCanvas {
+  overflow: visible;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App > * {
+  margin-left: 100px;
+}
+
+.downloadButton {
+  margin: 5px;
+}
+
+.graphic-container {
+  display: flex;
+  max-width: 1300px;
+  position: relative;
+}
+.graphic-container__inner {
+  height: 650px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #211212;
+  font-size: 16px;
+}

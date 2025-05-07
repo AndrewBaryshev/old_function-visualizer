@@ -1,0 +1,25 @@
+.choose-params {
+  width: 400px;
+  background-color: #eceeeb;
+  position: absolute;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formula-input {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-form-submit {
+  margin-top: 10px;
+}
+
+.input-formula {
+  width: 300px;
+}

@@ -1,0 +1,86 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  background: #bde3ff;
+}
+
+*,
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 100px;
+}
+
+@import '_smallButton';
+@import '_buttonContainer';
+@import '_switchValueButton';
+@import '_addMethodContainer';
+@import '_sliderComponent';
+@import '_addFunction';
+@import '_chooseParams';
+@import '_setRangeXY';
+@import '_showFirstLast';
+
+.container-main-graphic {
+  //!Основной компонент: самостоятельное позиционирование
+  position: relative;
+  // margin-top: 100px;
+}
+
+body {
+  -webkit-user-select: none; /* запрет выделения для WebKit */
+  -moz-user-select: none; /* запрет выделения для Gecko */
+  -ms-user-select: none; /* запрет выделения для Edge и IE */
+  user-select: none; /* общая команда */
+}
+
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.myCanvas {
+  overflow: visible;
+  // background: #baa39b;
+  // border: 1px solid #211212;
+  // margin-left: 10%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App > * {
+  margin-left: 100px;
+}
+
+.downloadButton {
+  margin: 5px;
+}
+
+.graphic-container {
+  display: flex;
+  max-width: 1300px;
+  position: relative;
+  &__inner {
+    height: 650px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #211212;
+    font-size: 16px;
+  }
+}
